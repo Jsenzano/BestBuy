@@ -13,8 +13,9 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber-reports/cucumber-pretty",
                 "json:target/cucumber-reports/cucumberTestReports.json",
         },
-        tags = {"@internationalTravelPage"},
+        tags = {"@creditCards"},
         dryRun = false
 )
-public class InternationalTravelPage_Runner {
+public class CreditCardsPage_Runner {
+
 }

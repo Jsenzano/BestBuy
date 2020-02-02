@@ -1,10 +1,8 @@
 package step_definitions.step_impl;
 
 import org.openqa.selenium.WebDriver;
-import testData.Coupon;
 import util.Driver;
-import util.SeleniumUtils;
 
-public class BookingPage_Impl {
+public class GiftCardsPage_Impl {
     private WebDriver driver = Driver.getDriver();
 }

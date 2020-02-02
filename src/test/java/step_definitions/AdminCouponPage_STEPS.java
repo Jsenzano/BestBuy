@@ -8,7 +8,7 @@ import step_definitions.step_impl.AdminCouponPage_Impl;
 import util.Driver;
 
 public class AdminCouponPage_STEPS {
-    private static WebDriver driver = Driver.getDriver();
+    private WebDriver driver = Driver.getDriver();
 //    AdminHomePage adminHomePage = new AdminHomePage();
     AdminCouponPage_Impl adminCouponPage_Impl = new AdminCouponPage_Impl();
 
