@@ -9,18 +9,18 @@ import util.Driver;
 
 public class AdminCouponPage_STEPS {
     private static WebDriver driver = Driver.getDriver();
-    AdminHomePage adminHomePage = new AdminHomePage();
+//    AdminHomePage adminHomePage = new AdminHomePage();
     AdminCouponPage_Impl adminCouponPage_Impl = new AdminCouponPage_Impl();
 
 
     @When("Creates a new coupon")
     public void creates_a_new_coupon() {
-        adminCouponPage_Impl.createNewCoupon();
+
     }
 
     @Then("Verifies coupon is created")
     public void verifies_coupon_is_created() {
-        Assert.assertTrue(adminCouponPage_Impl.verifyIfCouponExists());
+
     }
 
 

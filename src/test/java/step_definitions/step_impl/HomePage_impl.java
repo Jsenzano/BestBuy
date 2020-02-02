@@ -13,16 +13,24 @@ public class HomePage_impl {
     public String getTitle(){
         return driver.getTitle();
     }
+    public void clickCloseModalSignUp(){
+        SeleniumUtils.click(homePage.closeModalSignUp);
+    }
 
-    public void openTab(String name){
+    public String getPopularPicksName(){
+
+        return homePage.popularPicksName.getText();
+    }
+
+    public void clickNavItem(String name){
         switch (name.toLowerCase()){
-            case "passport": SeleniumUtils.click(homePage.passportTab);
+            case "credit card": SeleniumUtils.click(homePage.navCreditCards_btn);
                 break;
-            case "last tour": SeleniumUtils.click(homePage.lastFeaturedTour);
+            case "top deals": SeleniumUtils.click(homePage.navTopDeals_btn);
+                break;
+            case "gift cards": SeleniumUtils.click(homePage.navGiftCards_btn);
                 break;
         }
     }
-
-
 
 }

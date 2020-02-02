@@ -5,42 +5,27 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import util.Driver;
-import util.SeleniumUtils;
 
 public class HomePage {
     private static WebDriver driver = Driver.getDriver();
-    public HomePage(){
+
+    public HomePage() {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//div[@class='nameplate-website-tagline']")
-    public WebElement tsg_Banner;
+    @FindBy(xpath = "(//h3[@class='carousel-with-dotd-Carousel-headline v-m-bottom-xs'])[2]")
+    public WebElement popularPicksName;
 
-    @FindBy(xpath = "(//a[@id='dropdownCurrency'])[2]")
-    public WebElement myAccount_Btn;
+    @FindBy(xpath = "//button[@class='close']")
+    public WebElement closeModalSignUp;
 
-    @FindBy(xpath = "//a[text()='Sign Up']")
-    public WebElement signUp_Btn;
+    @FindBy(xpath = "(//nav[@class='top-nav-items']/ul/li/a)[1]")
+    public WebElement navCreditCards_btn;
 
-    @FindBy(xpath = "//a[text()='Login']")
-    public WebElement logIn_Btn;
+    @FindBy(xpath = "(//nav[@class='top-nav-items']/ul/li/a)[2]")
+    public WebElement navTopDeals_btn;
 
-    @FindBy(xpath = "//div[@class='container']//div[1]//figure[1]//a[1]")
-    public WebElement firstFeaturedTour;
-
-    @FindBy(xpath = "//div[@class=\"col\"][8]")
-    public WebElement lastFeaturedTour;
-
-    @FindBy(xpath = "//*[@class='BusinessUnitsMenu']/li[4]")
-    public WebElement passportTab;
-
-    @FindBy (xpath = "//ul[@class='BusinessUnitsMenu']/li[5]")
-    public WebElement internationalTravelTab;
-
-
-
-
-
-
+    @FindBy(xpath = "(//nav[@class='top-nav-items']/ul/li/a)[3]")
+    public WebElement navGiftCards_btn;
 
 }
