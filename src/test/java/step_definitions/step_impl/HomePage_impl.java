@@ -24,7 +24,7 @@ public class HomePage_impl {
 
     public void clickNavItem(String name){
         switch (name.toLowerCase()){
-            case "credit card": SeleniumUtils.click(homePage.navCreditCards_btn);
+            case "credit cards": SeleniumUtils.click(homePage.navCreditCards_btn);
                 break;
             case "top deals": SeleniumUtils.click(homePage.navTopDeals_btn);
                 break;

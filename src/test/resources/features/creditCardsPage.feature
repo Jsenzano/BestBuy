@@ -4,5 +4,5 @@
     Scenario: Verify credit cards page title and button name
       Given User opens home page
       When User navigates to "credit cards"
-      When User sees "Manage Account*"
-      Then Verifies title is "Best Buy Credit Card: Rewards & Financing"
+      When User sees credit card "Manage Account*"
+      Then Verifies  Credit Card title is "Best Buy Credit Card: Rewards & Financing"

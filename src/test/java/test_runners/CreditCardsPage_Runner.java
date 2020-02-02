@@ -10,12 +10,12 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features/",
         glue = "step_definitions",
         plugin = {
-                "pretty",//inEVE
+                "pretty",
                 "html:target/cucumber-reports/cucumber-pretty",
                 "json:target/cucumber-reports/cucumberTestReports.json",
         },
-        tags = {"@passportPage"},
+        tags = {"@creditCards"},
         dryRun = false
 )
-public class PassportPage_Runner {
+public class CreditCardsPage_Runner {
 }
