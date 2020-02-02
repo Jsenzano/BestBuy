@@ -25,7 +25,7 @@ public class HomePage {
     @FindBy(xpath = "(//nav[@class='top-nav-items']/ul/li/a)[2]")
     public WebElement navTopDeals_btn;
 
-    @FindBy(xpath = "(//nav[@class='top-nav-items']/ul/li/a)[3]")
+    @FindBy(xpath = "(//nav[@class='top-nav-items']/ul/li/a)[4]")
     public WebElement navGiftCards_btn;
 
 }

@@ -19,6 +19,7 @@ public class HomePage_STEPS {
     @Then("Verifies title is {string}")
     public void verifies_title_is(String string) {
         Assert.assertEquals("Best Buy | Official Online Store | Shop Now & Save",homePage_impl.getTitle());
+        System.out.println(homePage_impl.getTitle());
     }
 
     @When("User sees {string}")
