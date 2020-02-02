@@ -3,22 +3,15 @@ package step_definitions.step_impl;
 import org.openqa.selenium.WebDriver;
 import pages.HomePage;
 import util.Driver;
-import util.SeleniumUtils;
 
-public class HomePage_impl {
+public class HomePage_Impl {
 
     private static WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage();
 
-    public String getTitle(){
-        return driver.getTitle();
-    }
-    public void clickCloseModalSignUp(){
-        SeleniumUtils.click(homePage.closeModalSignUp);
-    }
 
-    public String getPopularPicksName(){
-
+<<<<<<< HEAD
+=======
         return homePage.popularPicksName.getText();
     }
 
@@ -28,9 +21,16 @@ public class HomePage_impl {
                 break;
             case "top deals": SeleniumUtils.click(homePage.navTopDeals_btn);
                 break;
+            case "deal of the day": SeleniumUtils.click(homePage.navDealOfTheDay_btn);
+                break;
             case "gift cards": SeleniumUtils.click(homePage.navGiftCards_btn);
+                break;
+            case "gift ideas": SeleniumUtils.click(homePage.navGiftIdeas_btn);
+                break;
+            case "for your business": SeleniumUtils.click(homePage.navForYourBusiness_btn);
                 break;
         }
     }
+>>>>>>> origin/master
 
 }

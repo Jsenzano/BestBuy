@@ -1,12 +1,14 @@
 package step_definitions.step_impl;
 
 import org.openqa.selenium.WebDriver;
-import util.ConfigReader;
+import pages.HomePage;
 import util.Driver;
-import util.SeleniumUtils;
 
-public class AdminHomePage_Impl {
+public class HomePage_Impl {
+
     private static WebDriver driver = Driver.getDriver();
+    HomePage homePage = new HomePage();
+
 
 
 }
