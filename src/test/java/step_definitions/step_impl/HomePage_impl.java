@@ -7,7 +7,7 @@ import util.SeleniumUtils;
 
 public class HomePage_impl {
 
-    private static WebDriver driver = Driver.getDriver();
+    private WebDriver driver = Driver.getDriver();
     HomePage homePage = new HomePage();
 
     public String getTitle(){
