@@ -7,18 +7,18 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import pages.GiftCardsPage;
 import step_definitions.step_impl.GiftCardsPage_impl;
-import step_definitions.step_impl.HomePage_impl;
+import step_definitions.step_impl.HomePage_Impl;
 import util.Driver;
 
 public class GiftCardsPage_STEPS {
     public WebDriver driver = Driver.getDriver();
     GiftCardsPage giftCardsPage = new GiftCardsPage();
     GiftCardsPage_impl giftCardsPage_impl = new GiftCardsPage_impl();
-    HomePage_impl homePage_impl = new HomePage_impl();
+    HomePage_Impl homePage_impl = new HomePage_Impl();
 
     @When("User navigates to Gift Cards page")
     public void user_navigates_to_Gift_Cards_page() {
-        homePage_impl.clickNavItem("gift cards");
+        //homePage_impl.clickNavItem("gift cards");
     }
 
     @Then("Verifies Gift Cards title is {string}")
